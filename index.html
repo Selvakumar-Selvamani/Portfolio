@@ -1,0 +1,599 @@
+<html>
+<head>
+	<title>Selva Appas Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="shortcut icon" type="image/png" href="favicon_final.png" sizes="360x360">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+}
+</head>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url(https://fonts.google.com/specimen/Slabo+27px);
+@import url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+@import url(https://fonts.google.com/specimen/Lobster);
+@import url(https://fonts.google.com/specimen/Kaushan+Script);
+@import url(https://fonts.google.com/specimen/Berkshire+Swash);
+@import url(https://fonts.google.com/specimen/Kaushan+Script);
+/*@media only screen and (max-width:1900px){
+  .container, .container-fluid, {
+  width:100px;
+}*/
+@font-face
+{
+	font-family:new;
+	src:url(font1.ttf);
+}	
+@font-face
+{
+	font-family: new1;
+	src:url(font2.ttf);
+}
+/*body
+{
+	background-color: rgb(0,0,0);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: relative;
+	url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}*/
+#first
+{
+	/*background-color: black;*/ 
+	background-image: url(firstback.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 800px;
+	background-position: relative;
+	overflow: hidden;
+
+}
+#second
+{
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 800px;
+	background-position: relative;
+	overflow: hidden;
+}
+#third
+{
+	background-image: url(back.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 549px;
+	background-position: relative;
+	overflow: hidden;
+}
+#four
+{
+	background-color: #0069FF;
+		background-repeat: no-repeat;
+	background-size: 100%;
+	height: 800px;
+	background-position: relative;
+	overflow: hidden;
+
+}
+#five
+{
+	background-color: #6C6D69;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 700px;
+	background-position: relative;
+	overflow: hidden;
+
+}
+#six
+{
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 1100px;
+	background-position: relative;
+	overflow: hidden;	
+}
+#last
+{
+	background-color: rgb(30,30,30);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 600px;
+	background-position: relative;
+	overflow: hidden;
+}
+.wrapper
+{
+	background-color: green;
+	width: auto;
+	z-index: 1000;
+	height: 100px;
+}
+#first p
+{
+	text-align: center;
+	color: white;
+	float: center;
+	padding-top: 20px;
+	size: 100px;
+}
+#first h1
+{
+	font-size: 100px;
+	color: white;
+	margin-top: 23%;
+	font-family:"new";
+}
+#main
+{
+	position: relative;
+	text-align: center;
+	float: center;
+}
+#second p
+{
+	padding-top: 10%;
+	text-align: center;
+	font-size: 30px;
+	font-family:Slabo;
+	line-height: 60px;
+}
+#second hr
+{
+	display: block;
+	margin-top: 3.8em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+#third p
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 18px;
+	color: gray;
+	margin-left: 90px;
+	margin-top: 60px;
+}
+#four p
+{
+ 	padding-top: 50px;
+ 	font-size: 18px;
+ 	text-align: center;
+ 	font-family: new2;
+ 	color: white;
+}
+#four h1
+{
+	padding-top: 30px;
+	text-align: center;
+	color: white;
+	font-family: new2;
+}
+#last h1
+{
+	color: white;
+}
+
+
+.card p
+{
+	text-align: center; 
+	font-weight:  bold;
+	padding-top: 20px;
+	font-size: 19px;
+	font-family: timesnewroman;
+	padding-bottom: 20px; 
+}
+#rotate
+{
+	font-family: Slabo;
+	transform: rotate(270deg);
+	font-size: 60px;
+	color:white;
+	height: 0px;
+	line-height: 30px;
+
+}
+.sch
+{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: arial;
+	margin-top: 0px;
+	color: gray;
+}
+.bigger
+{
+	font-size: 20px;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    background-color: white;
+    transition: 0.5s;
+    width: 450px;
+}
+.button
+{
+	border-radius: 4px;
+	background-color: #F1F1F1;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 100px;
+	transition: 0.5s;
+	cursor: pointer;
+	margin: 10px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px ;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 5;
+  right: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+textarea:focus
+{
+  background-color:#fff;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+}
+#logo:after {
+  content:"Selvakumar";
+  position: absolute;
+  left:189px;
+  top: 10px;
+}
+#logo:after {
+  background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}*/
+</style>
+<body>
+	<div id="first">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="animated pulse">Creative Visionary + Designer + Front End Developer</p>
+				</div>
+					<!--<p class="plate">-->
+						<div id="main" class="col-md-12">
+							<h1 class="animated fadeInDown">Selvakumar</h1>
+						</div>
+				<div class="col-md-12" style="padding-top: 260px;"><p style="color: gray; font-family: new1;">call me <br><span class="bigger">Selva</span></p></div>
+			</div>
+		</div>
+	</div>
+	<div id="second">
+		<div class="container-fluid" style="margin-right: 30px; margin-left: 30px;">
+			<div class="row">
+				<div class="col-md-12">
+					<!--hr-->
+					<div class="col-md-6">
+						<img src="img1.gif" style="align-items: left; height: 690px; width: 701px; padding-top: 281px;">
+					</div>
+					<div class="col-md-6">
+					<p>An idea maker, a designer, <br> a front end developer — My speciality is <br> turning nothing into something. <br> I got a knack for taking an idea, <br> giving it a foundation, then building on it to <br> create a relevant experience for the public.</p> </div>
+					</div>
+					<!--hr style="padding-top: 40px;"-->
+			</div>
+		</div>
+	</div>
+	<div id="third">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<p>MY DAILY ROUTINE</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="padding-top: 10%;">
+			<div class="col-md-4">
+		<div id="rotate">
+					<ul style="list-style: none;">
+					<li>05.30 am <br> <small class="sch"> WAKE UP OR HIT SNOOZE </small></li>
+					<li style="padding-top: 40px;">06.00 am <br> <small class="sch"> DRINK CUP OF COFFEE AND CHECKUP WITH EMAIL </small></li>
+					<li style="padding-top: 40px;">07.00 am <br> <small class="sch"> GET READY TO COLLEGE </small></li>
+					<li style="padding-top: 40px;">09.00 am <br> <small class="sch"> COLLEGE COLLEGE COLLEGE </small></li>
+					<li style="padding-top: 40px;">04.00 pm <br> <small class="sch"> OFFICE OFFICE OFFICE </small></li>
+					<li style="padding-top: 40px;">09.00 pm <br> <small class="sch"> BACK TO HOME </small></li>
+					<li style="padding-top: 40px;">09.30 pm <br> <small class="sch"> DINNER TIME </small></li>
+					<li style="padding-top: 40px;">10.00 pm <br> <small class="sch"> CATCH UP WITH SHOWS IN WATCH SERIES </small></li>
+					<li style="padding-top: 40px;">11.00 pm <br> <small class="sch"> BACK TO BED </small></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="four">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Wanna know what can i do....?</h1>
+					<img src="know1.gif" style="padding-left: 30%;">
+					<p>Keep goinggggg...</p>
+				</div>
+			 </div>
+			</div>
+		</div>
+		<div id="five">
+			<div class="card" style="padding-top: 55px;">
+			<div class="container-fluid">
+				<div class="col-md-12" style="padding-left: 30px;">
+					<div class="col-md-4">
+					<div class="card1">
+					<img class="wow animated fadeInDown" src="card1.jpg" style="width: 450px; height: 500px;">
+					<p>Desing For Printing</p>
+					</div> </div>
+					<div class="col-md-4">
+					<div class="card1">
+					<img src="card2.jpg" style="width: 450px; height: 500px;">
+					<p>Illustration</p>
+					</div></div>
+					<div class="col-md-4">
+					<div class="card1">
+					<img src="card3.jpg" style="width: 450px; height: 500px;">
+					<p>Desing For Web</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div id="six">
+		<div class="container-fluid" style="background-image: linear-gradient(to bottom right,#ECE9E6,#FFFFFF); padding-bottom: 25px;">
+			<div class="col-md-12">
+				<div class="col-md-6">
+				<img src="ktp.jpg" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
+				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">KANI TAMIZH PERAVAI SITE</h1>
+				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
+				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
+			</div>
+			<div class="col-md-6" style="">
+				<img src="cognit.png" style="margin-top: 20px; width: 95%; height: 400px" class="hover-shadow cursor">
+				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">SYMPOSIUM WEBSITE</h1>
+				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
+				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
+			</div></div>
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<img src="cognitcoming.png" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
+				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">SYMPOSIUM PRELAUNCH WEBSITE</h1>
+				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY</p>
+				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
+			</div>
+			<div class="col-md-6" style="">
+				<img src="incredible.png" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
+				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">INCREDIBLE INDIA WEBSITE</h1>
+				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
+				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
+			</div>
+		</div>
+</div>
+</div>
+	<div id="last" style="position: relative;">
+		<div class="container-fluid">
+			<div class="col-md-12">
+				<div class="col-md-7" style="">
+					<h1 style="text-align: left; font-family: times; font-style: italic; font-size: 20px; ">Contact</h1>
+					<img src="myimg.png" style="padding-top: 10px; width: 33%; height: 45%;">
+					<p style="text-align: left; font-family: times; font-weight:normal; color: white; font-size: 35px; position: relative; height: 40px;">Selvakumar Selvamani </p>
+					<p1 style="text-align: left; font-family: times; font-size: 18px; color: white;"> 2A, North Mada Street, <br> ARNI - 632 301. <br> Thiruvannamalai Dist.	</p1>
+					<h2 style="text-align: left; font-family: arial; font-size: 18px; color: white; height: 0px;">Mobile : +91 9842356081</h2>
+				</div>
+				<div class="col-md-5">
+					<h1 style="text-align: left; font-family: times; font-style: italic; font-size: 20px; ">Let's Talk</h1>
+
+					<form action="mail.php" method="post" name="form">
+						<div class="col-md-12"><label for="name" style="font-family: times; color: white; font-weight: normal;">Name</label>
+						<br>
+						<input style="height: 35px; width: 100%; border-radius: 5px 5px 5px 5px; border:none; padding: 10px;" type="text" placeholder="Enter Name" name="name" required>
+						</div>
+						<div class="col-md-12">
+						<label for="email" style="font-family: times; color: white; font-weight: normal; padding-top: 20px; ">E-Mail</label>
+						<br>
+						<input style="height: 35px; width: 100%; border-radius: 5px 5px 5px 5px; border:none;  padding: 10px;" type="email" placeholder="Enter Email" name="email" required>
+						</div>
+						<div class="col-md-12">
+						<label for="comment" style="font-family: times; color: white; font-weight: normal; padding-top: 20px">Description</label>
+						<br>
+						<textarea style="width: 100%; height: 250px; border-radius: 5px 5px 5px 5px; border:none;  padding: 10px;"  placeholder="Here it comes share something..." name="comment" required></textarea>
+						</div>
+						<button name="submit" type="submit" class="button" style="float: right;"><span>Submit</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+</div>
+<script src="wow.min.js"></script>
+<script>
+		new WOW().init();
+</script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div style="text-align: center; position: relative; margin-top: 30px;">Call Me Selva</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-lg-6"><p>about me</p>
+						<p>when u come to college u will face the consequences</p></div>
+					<div class="col-lg-6"><p>this is about me</p></div>
+
+
+				<img src="sys1.png" style="width: 700px; height: 500px; padding-top: 50px;">
+				</div>
+				<div class="col-lg-5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>-->
