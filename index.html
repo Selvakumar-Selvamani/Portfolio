@@ -1,557 +1,536 @@
-<html>
+<!DOCTYPE html>
+<html lang="em">
 <head>
-	<title>Selva Appas Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="shortcut icon" type="image/png" href="favicon_final.png" sizes="360x360">
+	<title>கணித்தமிழ் பேரவை</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
     <link rel="stylesheet" type="text/css" href="animate.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-
-}
 </head>
-<style type="text/css">
-@import url(https://fonts.googleapis.com/css?family=Arvo:700);
-@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
-@import url(https://fonts.google.com/specimen/Slabo+27px);
-@import url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
-@import url(https://fonts.google.com/specimen/Lobster);
-@import url(https://fonts.google.com/specimen/Kaushan+Script);
-@import url(https://fonts.google.com/specimen/Berkshire+Swash);
-@import url(https://fonts.google.com/specimen/Kaushan+Script);
-/*@media only screen and (max-width:1900px){
-  .container, .container-fluid, {
-  width:100px;
-}*/
+<style>
 @font-face
 {
-	font-family:new;
-	src:url(font1.ttf);
-}	
-@font-face
-{
-	font-family: new1;
-	src:url(font2.ttf);
+	font-family: sundaram;
+	src: url(Uni Ila.Sundaram-05.ttf);
+	src: url(Uni Ila.Sundaram-08.ttf);
+	src: url(Uni Ila.Sundaram-06.ttf);
+	src: url(Uni Ila.Sundaram-10.ttf);
 }
-/*body
-{
-	background-color: rgb(0,0,0);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: relative;
-	url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
-}*/
 #first
 {
-	/*background-color: black;*/ 
-	background-image: url(firstback.png);
+	background-image: url(bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 800px;
 	background-position: relative;
 	overflow: hidden;
-
 }
 #second
 {
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 800px;
-	background-position: relative;
-	overflow: hidden;
+	padding-top: 50px;
 }
 #third
 {
-	background-image: url(back.png);
+	padding-top: 30px;
+	background-image: url(2144.jpg);
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 549px;
-	background-position: relative;
-	overflow: hidden;
 }
 #four
 {
-	background-color: #0069FF;
-		background-repeat: no-repeat;
-	background-size: 100%;
-	height: 800px;
-	background-position: relative;
-	overflow: hidden;
-
-}
-#five
-{
-	background-color: #6C6D69;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 700px;
-	background-position: relative;
-	overflow: hidden;
-
-}
-#six
-{
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 1100px;
-	background-position: relative;
-	overflow: hidden;	
-}
-#last
-{
-	background-color: rgb(30,30,30);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 600px;
-	background-position: relative;
-	overflow: hidden;
+	overflow: auto;
+	background-color: #888C89;
+	z-index: -10;
 }
 .wrapper
 {
-	background-color: green;
+	background-color: blue;
+	max-height: 0px;
 	width: auto;
 	z-index: 1000;
-	height: 100px;
 }
-#first p
+.wrapper h1
+{
+	font-family: "Uni Ila.Sundaram-05";
+}
+.navbar-inverse{
+  border: none;
+  font-family: "Uni Ila.Sundaram-06";
+  font-size: 19px;
+}
+.effect1{
+     box-shadow: 0 10px 6px -6px #808080;
+}
+.hover-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.hover-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.hover-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.hover-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.nav >li >a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body
+{
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: relative;
+}
+#bg li img
 {
 	text-align: center;
-	color: white;
 	float: center;
-	padding-top: 20px;
-	size: 100px;
+	width: 130%;
+	height: 8%;
+	margin-right:50%;
+	margin-top: 2%;
 }
-#first h1
+#bg h2
 {
-	font-size: 100px;
+	font-weight: bold;
 	color: white;
-	margin-top: 23%;
-	font-family:"new";
-}
-#main
-{
-	position: relative;
+	font-size: 72px;
+  	font-family: "Uni Ila.Sundaram-08";
+	text-shadow: 0 1px 0 #9E9E9E, 0 2px 0 #A89B8D, 0 3px 0 #78909C, 0 4px 0 #757575, 0 5px 0 #616161, 0 6px 1px rgba(0,0,0,.1), 
+	0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+	font-size: 120px;
 	text-align: center;
+	margin-top: 2%;
+}
+#bg figure
+{
+	text-align: center;
+	position:relative;
+	margin-top: 3%;
+	color: white;
+	font-size: 52px;
+	z-index: 1000;
+}
+#bg h4
+{
+	font-family: "Uni Ila.Sundaram-04";
+	font-size: 20px;
 	float: center;
+	line-height: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	color: black;
+	z-index: 1000;
+}
+.container12
+{
+	max-height: 10%;
+}
+.navbar-nav > li > a 
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-top: 5px;
+}
+.navbar 
+{
+	min-height:32px
+}
+#second h6
+{
+	margin: 7px;
+	font-weight: bolder;
+	text-align: left;
+	float: center;
+	color: #FAA615;
+	text-shadow: 1px 1px 1px black, 0 0 25px #373E46, 0 0 5px #373E46;
+	font-family: "Uni ila.Sundaram-09";
+	font-size: 35px;
 }
 #second p
 {
-	padding-top: 10%;
-	text-align: center;
-	font-size: 30px;
-	font-family:Slabo;
-	line-height: 60px;
+	margin: 7px;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 30px;
+	font-weight: normal;
+	color: #0D454E;
+	font-family: "Uni Ila.Sundaram-10";
+	font-size: 18px;
+	line-height: 120%;
+	text-align: justify;
+	padding-top: 10px;
 }
-#second hr
+#third h1
 {
-	display: block;
-	margin-top: 3.8em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 2px;
+	margin: 7px;
+	font-family: "Uni ila.Sundaram-09";
+	font-weight: bolder;
+	text-align: center;
+	color: #FAA615;
+	text-shadow: 1px 1px 1px black, 0 0 25px #373E46, 0 0 5px #373E46;
+	font-size: 35px; 
 }
 #third p
 {
-	font-family: arial;
-	font-weight: bold;
+	margin: 7px;
+	font-weight: normal;
+	margin-left: 80px;
+	margin-right: 80px;
+	color: #0D454E;
+	font-family: "Uni Ila.Sundaram-10";
 	font-size: 18px;
-	color: gray;
-	margin-left: 90px;
-	margin-top: 60px;
-}
-#four p
-{
- 	padding-top: 50px;
- 	font-size: 18px;
- 	text-align: center;
- 	font-family: new2;
- 	color: white;
+	line-height: 120%;
+	text-align: justify;
+	padding-top: 10px;
 }
 #four h1
 {
-	padding-top: 30px;
+	margin: 7px;
+	font-family: "Uni ila.Sundaram-09";
+	font-weight: bolder;
+	text-align: right;
+	color: #FAA615;
+	text-shadow: 1px 1px 1px black, 0 0 25px #373E46, 0 0 5px #373E46;
+	font-size: 35px;
+}
+#four img
+{
+	margin-left:5px;
+	margin-right: 5px;
+	float: center;
+	border-radius: 100px;
 	text-align: center;
+	position: relative;
+}
+#add p
+{
+	margin-left: 10px;
+	text-align: left;
 	color: white;
-	font-family: new2;
-}
-#last h1
-{
-	color: white;
-}
-
-
-.card p
-{
-	text-align: center; 
-	font-weight:  bold;
-	padding-top: 20px;
-	font-size: 19px;
-	font-family: timesnewroman;
-	padding-bottom: 20px; 
-}
-#rotate
-{
-	font-family: Slabo;
-	transform: rotate(270deg);
-	font-size: 60px;
-	color:white;
-	height: 0px;
-	line-height: 30px;
-
-}
-.sch
-{
-	font-size: 10px;
 	font-weight: bold;
-	font-family: arial;
-	margin-top: 0px;
-	color: gray;
+	font-family: "Uni ila.Sundaram-04";
+	font-size: 30px;
 }
-.bigger
+.slide-down-page
+{
+	position: absolute;
+	width: 100%;
+	box-sizing: content-box;
+	background-color: #666;
+	text-align: right;
+}
+.container h4
 {
 	font-size: 20px;
+	font-family: "Uni Ila.Sundaram-06";
+	color: white;
+
 }
-.card1 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
-    background-color: white;
-    transition: 0.5s;
-    width: 450px;
-}
-.button
+legend
 {
-	border-radius: 4px;
-	background-color: #F1F1F1;
-	border: none;
-	color: black;
-	text-align: center;
+	font-size: 18px;
+	font-family: "Uni Ila.Sundaram-09";
+	color: white;
+}
+label
+{
 	font-size: 15px;
-	padding: 10px;
-	width: 100px;
-	transition: 0.5s;
-	cursor: pointer;
-	margin: 10px;
+	font-family: "Uni Ila.Sundaram-10";
+	color: white;
 }
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
- }
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px ;
-  transition: 0.5s;
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
-.button:hover span {
-  padding-right: 15px;
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.button:hover span:after {
-  opacity: 5;
-  right: 0;
-}
-
-input[type="text"]:focus, input[type="email"]:focus
+/*.btn
 {
-  background-color: #ddd;
-  outline: none;
-}
-
-textarea:focus
+	display : inline-block;
+	text-decoration: none;
+	background-color: #09f;
+	color: #fff;
+	padding: 5px 20px;
+}*/
+footer
 {
-  background-color:#fff;
+	background-color: rgb(30,30,30);
+	text-align: center;
+	color: white;
 }
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 </style>
+<header style="position: fixed; z-index: 10000">
+<div class="col-md-12" style="background-color: #222220;">
+	<div class="wrapper" style="max-height:10px;z-index: 10000;margin-top: 2%;">
+	<div class="col-md-1"><img class="img-responsive" src="logo.jpg" style="height: 50%;width: 50%;"/></div>
+	<div class="col-md-10" style="text-align: center; margin-top: 0px; color: white;">
+	<h1 style="text-align:center;font-size:50px;margin-top: -10px">மிஸ்ரிமல் நவஜி முனோத் ஜெயின் பொறியியல் கல்லூரி</h1><p>(A Jain Minority Institution)</p></div>
+	<div class="col-md-1"><img class="img-responsive" src="logo1.png" style="width: 70px; height: 70px;"></div>
+	</div>
+	</div>
+<div class="col-md-12" style="background-color:#222222; box-shadow: 2px 2px 25px 2px black">
+<nav class="nav nav-inverse">
+<div class="container-fluid">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      </div>
+<div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
+      <div class="col-md-6" style="width: auto;">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#first" class="current">முகப்பு</a></li>
+		<li><a href="#second">தமிழ் மொழியின் சிறப்பு </a></li>
+		<li><a href="#third">எங்களைப் பற்றி</a></li>
+		<li><a href="#four">தொடர்பு விவரங்கள்</a></li>
+		</ul>
+    </div>
+    <div class="col-md-offset-3 col-mod-3">
+    <ul class="nav navbar-nav navbar-right">
+    <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#222222; border:none; "><span class="glyphicon glyphicon-user"></span>&nbspபதிவு செய்ய</button></li></ul>
+    </div>
+    </div>
+</nav>
+</div>
+</header>
 <body>
-	<div id="first">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="animated pulse">Creative Visionary + Designer + Front End Developer</p>
-				</div>
-					<!--<p class="plate">-->
-						<div id="main" class="col-md-12">
-							<h1 class="animated fadeInDown">Selvakumar</h1>
-						</div>
-				<div class="col-md-12" style="padding-top: 260px;"><p style="color: gray; font-family: new1;">call me <br><span class="bigger">Selva</span></p></div>
-			</div>
-		</div>
+<div id="first" style="height: 800px; width: auto; position: relative;">
+	<div id="bg" class="col-md-12">
+	<div class="container12" style="height: 100px; margin-top:13%">
+	<ul id="scene">
+	<li class="layer" data-depth="0.70"><h2 class="animated zoomIn">கணித்தமிழ் பேரவை</h2></li>
+	<li class="layer" data-depth="0.40"><img src="parallax/1.png" alt="1" style="width: 120%; margin-left:-110px;"/></li>
+	<li class="layer" data-depth="0.70"><img src="parallax/2.png" alt="2" style="width: 120%; margin-left:-110px;"/></li>
+	<li class="layer" data-depth="0.40"><img src="parallax/3.png" alt="3" style="width: 120%; margin-left:-110px;"/></li>
+	</ul>
+	<figure><img src="logo2.png" style="width: 250px; height: 250px; float: center;"></figure>
+	<h4 style="font-family: Uni Ila.Sundaram-04; font-size: 20px; float: center; line-height: 100%; text-align: center; font-weight: bold;
+	margin-top: 30px; color: #263437; position:relative; z-index: 1000;">அகர முதல எழுத்தெல்லாம் ஆதி<br>
+	பகவன் முதற்றே உலகு &nbsp (குறள்) </h4>
 	</div>
-	<div id="second">
-		<div class="container-fluid" style="margin-right: 30px; margin-left: 30px;">
-			<div class="row">
-				<div class="col-md-12">
-					<!--hr-->
-					<div class="col-md-6">
-						<img src="img1.gif" style="align-items: left; height: 690px; width: 701px; padding-top: 281px;">
-					</div>
-					<div class="col-md-6">
-					<p>An idea maker, a designer, <br> a front end developer — My speciality is <br> turning nothing into something. <br> I got a knack for taking an idea, <br> giving it a foundation, then building on it to <br> create a relevant experience for the public.</p> </div>
-					</div>
-					<!--hr style="padding-top: 40px;"-->
-			</div>
-		</div>
 	</div>
-	<div id="third">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<p>MY DAILY ROUTINE</p>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid" style="padding-top: 10%;">
-			<div class="col-md-4">
-		<div id="rotate">
-					<ul style="list-style: none;">
-					<li>05.30 am <br> <small class="sch"> WAKE UP OR HIT SNOOZE </small></li>
-					<li style="padding-top: 40px;">06.00 am <br> <small class="sch"> DRINK CUP OF COFFEE AND CHECKUP WITH EMAIL </small></li>
-					<li style="padding-top: 40px;">07.00 am <br> <small class="sch"> GET READY TO COLLEGE </small></li>
-					<li style="padding-top: 40px;">09.00 am <br> <small class="sch"> COLLEGE COLLEGE COLLEGE </small></li>
-					<li style="padding-top: 40px;">04.00 pm <br> <small class="sch"> OFFICE OFFICE OFFICE </small></li>
-					<li style="padding-top: 40px;">09.00 pm <br> <small class="sch"> BACK TO HOME </small></li>
-					<li style="padding-top: 40px;">09.30 pm <br> <small class="sch"> DINNER TIME </small></li>
-					<li style="padding-top: 40px;">10.00 pm <br> <small class="sch"> CATCH UP WITH SHOWS IN WATCH SERIES </small></li>
-					<li style="padding-top: 40px;">11.00 pm <br> <small class="sch"> BACK TO BED </small></li>
-					</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="four">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Wanna know what can i do....?</h1>
-					<img src="know1.gif" style="padding-left: 30%;">
-					<p>Keep goinggggg...</p>
-				</div>
-			 </div>
-			</div>
-		</div>
-		<div id="five">
-			<div class="card" style="padding-top: 55px;">
-			<div class="container-fluid">
-				<div class="col-md-12" style="padding-left: 30px;">
-					<div class="col-md-4">
-					<div class="card1">
-					<img class="wow animated fadeInDown" src="card1.jpg" style="width: 450px; height: 500px;">
-					<p>Desing For Printing</p>
-					</div> </div>
-					<div class="col-md-4">
-					<div class="card1">
-					<img src="card2.jpg" style="width: 450px; height: 500px;">
-					<p>Illustration</p>
-					</div></div>
-					<div class="col-md-4">
-					<div class="card1">
-					<img src="card3.jpg" style="width: 450px; height: 500px;">
-					<p>Desing For Web</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-	<div id="six">
-		<div class="container-fluid" style="background-image: linear-gradient(to bottom right,#ECE9E6,#FFFFFF); padding-bottom: 25px;">
-			<div class="col-md-12">
-				<div class="col-md-6">
-				<img src="ktp.jpg" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
-				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">KANI TAMIZH PERAVAI SITE</h1>
-				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
-				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
-			</div>
-			<div class="col-md-6" style="">
-				<img src="cognit.png" style="margin-top: 20px; width: 95%; height: 400px" class="hover-shadow cursor">
-				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">SYMPOSIUM WEBSITE</h1>
-				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
-				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
-			</div></div>
-		<div class="col-md-12">
-			<div class="col-md-6">
-				<img src="cognitcoming.png" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
-				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">SYMPOSIUM PRELAUNCH WEBSITE</h1>
-				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY</p>
-				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
-			</div>
-			<div class="col-md-6" style="">
-				<img src="incredible.png" style="margin-top: 20px; width: 95%; height: 400px;" class="hover-shadow cursor">
-				<h1 style="text-align: center; font-family: times; font-size: 20px; font-weight: bold;">INCREDIBLE INDIA WEBSITE</h1>
-				<p style="text-align: center; font-size: 16px; color: ">Technologies Used : HTML,CSS,BOOTSTRAP,JQUERY,PHP,SQL</p>
-				<a href="" style="padding-left: 280px;"><button class="btn btn-default" style="background-color: transparent; border-width: 1.5px; color: black">Click To Visit</button></a>
-			</div>
-		</div>
-</div>
-</div>
-	<div id="last" style="position: relative;">
-		<div class="container-fluid">
-			<div class="col-md-12">
-				<div class="col-md-7" style="">
-					<h1 style="text-align: left; font-family: times; font-style: italic; font-size: 20px; ">Contact</h1>
-					<img src="myimg.png" style="padding-top: 10px; width: 33%; height: 45%;">
-					<p style="text-align: left; font-family: times; font-weight:normal; color: white; font-size: 35px; position: relative; height: 40px;">Selvakumar Selvamani </p>
-					<p1 style="text-align: left; font-family: times; font-size: 18px; color: white;"> 2A, North Mada Street, <br> ARNI - 632 301. <br> Thiruvannamalai Dist.	</p1>
-					<h2 style="text-align: left; font-family: arial; font-size: 18px; color: white; height: 0px;">Mobile : +91 9842356081</h2>
-				</div>
-				<div class="col-md-5">
-					<h1 style="text-align: left; font-family: times; font-style: italic; font-size: 20px; ">Let's Talk</h1>
 
-					<form action="mail.php" method="post" name="form">
-						<div class="col-md-12"><label for="name" style="font-family: times; color: white; font-weight: normal;">Name</label>
-						<br>
-						<input style="height: 35px; width: 100%; border-radius: 5px 5px 5px 5px; border:none; padding: 10px;" type="text" placeholder="Enter Name" name="name" required>
-						</div>
-						<div class="col-md-12">
-						<label for="email" style="font-family: times; color: white; font-weight: normal; padding-top: 20px; ">E-Mail</label>
-						<br>
-						<input style="height: 35px; width: 100%; border-radius: 5px 5px 5px 5px; border:none;  padding: 10px;" type="email" placeholder="Enter Email" name="email" required>
-						</div>
-						<div class="col-md-12">
-						<label for="comment" style="font-family: times; color: white; font-weight: normal; padding-top: 20px">Description</label>
-						<br>
-						<textarea style="width: 100%; height: 250px; border-radius: 5px 5px 5px 5px; border:none;  padding: 10px;"  placeholder="Here it comes share something..." name="comment" required></textarea>
-						</div>
-						<button name="submit" type="submit" class="button" style="float: right;"><span>Submit</span></button>
-					</form>
-				</div>
-			</div>
-		</div>
+
+<script src="parallax-master/deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
 </div>
+<div id="second" style="position: relative; z-index: 1000;">	
+<h6>தமிழ் மொழியின் சிறப்பு </h6>
+<div class="image" style="float: center; text-align: center;">
+<div class="barathi" style="height: 400px; overflow: hidden;">
+<img src="candy1.jpg" style="padding: 10px" class="wow animated bounceInLeft">
+<img src="candy2.jpg" style="padding: 10px" class="wow animated fadeInUp">
+<img src="selva.jpg" style="width: 300px; padding: 10px" class="wow animated bounceInRight">
+</div>
+</div>
+<p>தமிழ் மொழி (Tamil language) தமிழர்களினதும், தமிழ் பேசும் பலரதும் தாய்மொழி ஆகும். தமிழ் திராவிட மொழிக் குடும்பத்தின் முதன்மையான மொழிகளில் ஒன்றும் செம்மொழியும் ஆகும். இந்தியா, இலங்கை, மலேசியா, சிங்கப்பூர் ஆகிய நாடுகளில் அதிக அளவிலும், ஐக்கிய அரபு அமீரகம், தென்னாப்பிரிக்கா, மொரிசியசு, பிஜி, ரீயூனியன், டிரினிடாட் போன்ற நாடுகளில் சிறிய அளவிலும் தமிழ் பேசப்படுகிறது. 1997ஆம் ஆண்டுப் புள்ளி விவரப்படி உலகம் முழுவதிலும் 8 கோடி (80 மில்லியன்) மக்களால் பேசப்படும் தமிழ்[10], ஒரு மொழியைத் தாய்மொழியாகக் கொண்டு பேசும் மக்களின் எண்ணிக்கை அடிப்படையில் பதினெட்டாவது இடத்தில் உள்ளது.[11] </p>
+<p>இரண்டாயிரத்து ஐந்நூறு ஆண்டுகளுக்கும் மேல் பழமை வாய்ந்த இலக்கிய மரபைக் கொண்டுள்ள தமிழ் மொழி, தற்போது வழக்கில் இருக்கும் ஒரு சில செம்மொழிகளில் ஒன்றாகும்.[12] திராவிட மொழிக்குடும்பத்தின் பொதுக்குணத்தினால் ஒலி மற்றும் சொல்லமைப்புகளில் சிறிய மாற்றங்களே ஏற்பட்டுள்ளதாலும் [13] மேலும் கவனமாகப் பழைய அமைப்புக்களைக் காக்கும் மரபினாலும் பழங்கால இலக்கிய நடை கூட மக்களால் புரிந்து கொள்ளும் நிலையில் உள்ளது. எடுத்துக்காட்டாக, பள்ளிக் குழந்தைகள் சிறுவயதில் கற்கும் அகர வரிசையான ஆத்திசூடி 1,000 ஆண்டுகளுக்கு முன்னர் இயற்றப்பட்டது. திருக்குறள் ஏறத்தாழ 2,000 ஆண்டுகளுக்கு முன் இயற்றப்பட்டது.</p>
+<p>தமிழின் முதல் இலக்கண நூல் தொல்காப்பியம்-3 அதிகாரம், 27 இயல்கள், 1610 நூற்பாக்கள். தமிழரின் வாழ்வியலக்கணமான திருக்குறள் 3 பால்கள், 133 அதிகாரங்கள்,1330 குறள்கள். சிலப்பதிகாரம் 3 காண்டம், 30 காதைகள் 5001 வரிகள். மணிமேகலை 30 காதைகள், 4755 வரிகள். சீவகசிந்தாமணி 13 இலம்பகங்கள், 3145 பாடல்கள். பெரிய புராணம் 2 காண்டங்கள்,           13 சருக்கங்கள், 4286 பாடல்கள். கம்பராமாயணம் 6 காண்டங்கள்,           118 படலங்கள்,10589 பாடல்கள்.நல்லாப்பிள்ளை பாரதம் 18 பருவங்கள், 11000 பாடல்கள். கந்தபுராணம் 6 காண்டம், 135 படலங்கள்,1ஒ0345 பாடல்கள். திருவிளையாடற்புராணம் 3 காண்டங்கள், 36 படலங்கள், 3615 பாடல்கள். சீறாப்புராணம் 3 காண்டங்கள்,92 படலங்கள், 5027 பாடல்கள். இரட்சணிய யாத்திரிகம் 5 பருவங்கள், 47 படலங்கள் ,3776 பாடல்கள். இராவண காவியம் 5 காண்டம், 57 படலங்கள், 3106 விருத்தங்கள். ஏசு காவியம் 5 பாகம், 149 அதிகாரம், 810 விருத்தங்கள், 2346 அகவலடிகள்.</p>
+
+<p>தமிழில் உள்ளவைகள் எல்லாம் அளவில் பெரியவை மட்டுமல்ல தன்மையிலும் பெருமைக்குரியனவாக உள்ளதையே தமிழின் தனிச்சிறப்பு என கொண்டாடுகிறோம்.</p>
+
+<p>தமிழ் மொழி பக்தி மொழி, மனித இரக்க உணர்வைப் பெருமிதமாகப் போற்றும் அன்புமொழி. உலகில் வேறு  எந்த மொழியிலும் காணக்கிடைக்காத அளவு பக்திப்பாசுரங்கள் நிரம்பிய மொழி தமிழ் ஒன்றே. சைவம் பன்னிருதிருமுறையையும், வைணவம் நாலாயிரதிவ்வியப் பிரபந்தத்தையும் வழிபடும் மந்திரமாகப் போற்றி வணங்கிவருகின்றன. இது நெடுங்காலமாகப் பழக்கத்திலிருந்து வரும் தமிழர் வழிபாடு. தேவாரம்,திருவாசகம்,திருப்பாவை,திருவெம்பாவை, திருமொழி, திருவாய்மொழி, திருமந்திரம், திருவருட்பா, திருப்புகழ், தேசோமயானந்தம், சருவசமயக்கீர்த்தனைகள், இசுலாமியத் தாயுமானவரான குணங்குடி மஸ்தானின் பராபரக் கண்ணிகள், இத்தகைய தெய்வப்புகழ்மொழிகள் உலகில் வேறு எந்தமொழியிலும் இல்லை. தமிழ்மொழியிலே நிறைவாக உள்ளன என்பதையே தமிழின் தனிச்சிறப்பு எனக் குறிப்பிடுவதில் பெருமை கொள்கின்றோம்.”</p>
+</div>
+<div id="third" style="height: 700px; width: auto; position: relative;" background-image: url(bg11.jpg);>
+<h1>எங்களைப் பற்றி</h1>
+<div style="width: auto" align="middle">
+<img src="clg.png" height="300px" width="450px" class="wow animated flipInX"/>
+</div>
+<p>மிஸ்ரிமல் நவஜி முனோத் ஜெயின் பொறியியல் கல்லூரி</p>
+<p>இரண்டாயிரத்து ஐந்நூறு ஆண்டுகளுக்கும் மேல் பழமை வாய்ந்த இலக்கிய மரபைக் கொண்டுள்ள தமிழ் மொழி, தற்போது வழக்கில் இருக்கும் ஒரு சில செம்மொழிகளில் ஒன்றாகும்.[12] திராவிட மொழிக்குடும்பத்தின் பொதுக்குணத்தினால் ஒலி மற்றும் சொல்லமைப்புகளில் சிறிய மாற்றங்களே ஏற்பட்டுள்ளதாலும் [13] மேலும் கவனமாகப் பழைய அமைப்புக்களைக் காக்கும் மரபினாலும் பழங்கால இலக்கிய நடை கூட மக்களால் புரிந்து கொள்ளும் நிலையில் உள்ளது. எடுத்துக்காட்டாக, பள்ளிக் குழந்தைகள் சிறுவயதில் கற்கும் அகர வரிசையான ஆத்திசூடி 1,000 ஆண்டுகளுக்கு முன்னர் இயற்றப்பட்டது. திருக்குறள் ஏறத்தாழ 2,000 ஆண்டுகளுக்கு முன் இயற்றப்பட்டது.</p>
+<p>தமிழின் முதல் இலக்கண நூல் தொல்காப்பியம்-3 அதிகாரம், 27 இயல்கள், 1610 நூற்பாக்கள். தமிழரின் வாழ்வியலக்கணமான திருக்குறள் 3 பால்கள், 133 அதிகாரங்கள்,1330 குறள்கள். சிலப்பதிகாரம் 3 காண்டம், 30 காதைகள் 5001 வரிகள். மணிமேகலை 30 காதைகள், 4755 வரிகள். சீவகசிந்தாமணி 13 இலம்பகங்கள், 3145 பாடல்கள். பெரிய புராணம் 2 காண்டங்கள்,           13 சருக்கங்கள், 4286 பாடல்கள். கம்பராமாயணம் 6 காண்டங்கள்,           118 படலங்கள்,10589 பாடல்கள்.நல்லாப்பிள்ளை பாரதம் 18 பருவங்கள், 11000 பாடல்கள். கந்தபுராணம் 6 காண்டம், 135 படலங்கள்,1ஒ0345 பாடல்கள். திருவிளையாடற்புராணம் 3 காண்டங்கள், 36 படலங்கள், 3615 பாடல்கள். சீறாப்புராணம் 3 காண்டங்கள்,92 படலங்கள், 5027 பாடல்கள். இரட்சணிய யாத்திரிகம் 5 பருவங்கள், 47 படலங்கள் ,3776 பாடல்கள். இராவண காவியம் 5 காண்டம், 57 படலங்கள், 3106 விருத்தங்கள். ஏசு காவியம் 5 பாகம், 149 அதிகாரம், 810 விருத்தங்கள், 2346 அகவலடிகள்.</p></div>
+<div id="four" style="background-color: #4D5152; width:auto; height: 400px; overflow: hidden;">
+<h1>தொடர்பு விவரங்கள்</h1>
+<div class="row">
+<div class="col-md-4">
+<div style="float: center;height: 200px; width: auto; margin-top: 10px;" align="middle">
+<img src="PHOTO\temp.jpg" height="220px" width="220px" align="middle" style="float: center">
+</div>
+</div>
+<div class="col-md-8">
+<div id="add" style="margin-top: 20px">
+<p style="font-size: 18px;">முகவரி : <span style="font-size: 28px">மிஸ்ரிமல் நவஜீ முனோத் ஜெயின் பொறியியல் கல்லூரி,</span></p>
+<p style="font-size: 18px;">குரு மருதர் கேசரி கட்டிடம்,</p>
+<p style="font-size: 18px;">ராஜிவ் காந்தி சாலை,</p>
+<p style="font-size: 18px;">ஓ.எம்.ஆர்., துரைப்பாக்கம்.</p>
+<p style="font-size: 18px;">அலைபேசி : 8056209395</p> 
+<p style="font-size: 18px;">மின்னஞ்சல் : dhina79@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container" style="position: relative; z-index: 10000;">
+
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      
+      <div class="modal-content" style="background-color: #263238">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">பதிவு செய்</h4>
+        </div>
+        <div class="modal-body">
+          <form action="www.cog.com/signup.php" method="post">
+<fieldset>
+<legend>உங்களை பற்றி</legend>
+<label style="margin-top: 15px;">பெயர் :</label>
+<input type="text" size="15" length="30" placeholder="username"></input><br />
+<label style="margin-top: 15px;">தந்தை பெயர் :</label>
+<input type="text" size="15" length="30" placeholder="fathername">
+</input><br />
+</fieldset>
+<fieldset>
+<legend style="padding-top: 10px;">தொடர்பு விவரம் </legend>
+<label style="margin-top: 15px;">அலைபேசி :</label>
+<input type="text" size="15" length="30"  placeholder="mobileno">
+<label style="margin-top: 15px;">முகவரி :</label>
+<input type="text" size="15" length="30" placeholder="address">
+<label style="margin-top: 15px;">மின்னஞ்சல் :</label>
+<input type="email" size="15" length="30" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required placeholder="emailid">
+<input type="submit" value="பதிவு செய்" style="border-color: white; border-width: 2px; background-color: #263238; color:white; margin-top: 15px; border-radius: 20px;"></input>
+</fieldset>
+<!--<fieldset>உங்கள் கருத்து
+<label>what do you think about us?</label><br />
+<input type="radio" name="back" value="good" checked="checked" />good</input>
+<input type="radio" name="back" value="bad" />bad</input><br />
+<br /><label for="hear">how did you head about us?</label>
+<select name="referrer" id="hear">
+	<option value="google">google</option>
+	<option value="yahoo">yahoo</option>
+	<option value="new">new</option>
+</select>
+<br /><label for="review">review</label><br />
+<textarea name="comments" cols="40" rows="4" id="review"></textarea></input>-->
+</fieldset>
+</form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: transparent; border-width: 2px; color: white">பின் செல்</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<!--<div class="slide-down-page">
+<a href="#" class="close btn">close</a>
+<form action="www.cog.com/signup.php" method="post">
+<fieldset>
+<legend>your details</legend>
+<label>username</label>
+<input type="text" size="15" length="30" value="name" placeholder="username"></input><br />
+<label>fathername</label>
+<input type="text" size="15" length="30" value="fathername" placeholder="fathername">
+</input><br />
+</fieldset>
+<fieldset>
+<legend>contact details</legend>
+<label>mobile:</label>
+<input type="text" size="15" length="30" value="mobile" placeholder="mobileno"></input><br />
+<label>address:</label>
+<input type="text" size="15" length="30" value="address" placeholder="address"></input><br />
+<label>email:</label>
+<input type="email" size="15" length="30" value="email" placeholder="emailid"></input><br />
+<input type="submit" value="signup"></input>
+</fieldset>
+<fieldset>review
+<label>what do you think about us?</label><br />
+<input type="radio" name="back" value="good" checked="checked" />good</input>
+<input type="radio" name="back" value="bad" />bad</input><br />
+<br /><label for="hear">how did you head about us?</label>
+<select name="referrer" id="hear">
+	<option value="google">google</option>
+	<option value="yahoo">yahoo</option>
+	<option value="new">new</option>
+</select>
+<br /><label for="review">review</label><br />
+<textarea name="comments" cols="40" rows="4" id="review"></textarea></input>
+</fieldset>
+</form>
+</div>
+<script type="text/javascript">
+		(function () {
+		var windowH = $(window).height(),
+		documElem = $ (document),
+		slidedownpage = $('.slide-down-page'),
+		content = $('.content'),
+		btns = $('.btn'),
+		animspeed = 500;
+
+	slidedownpage.css({
+		height: windowH + 'px',
+		top: -windowH + 'px',
+	}); 
+	btns.on('click',function() {
+		if( $(this).hasClass('open') ){
+			slidedownpage.animate({'top': 0}, animspeed);
+			content.animate({'margin-top' : windowH + 'px'}, animspeed);
+		}
+		else
+		{
+		slidedownpage.animate({'margin-top' : -windowH + 'px'}, animspeed);
+		content.animate({'margin-top' : 0}, animspeed);	
+		}
+		e.preventDefault();
+	});
+
+})();
+</script>-->
+
+<footer>
+	Copyrights &copy; team spockles
+</footer>
 <script src="wow.min.js"></script>
 <script>
 		new WOW().init();
 </script>
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script> 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
